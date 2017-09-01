@@ -84,3 +84,19 @@ body{
     }
   }
 }
+
+.gridbox
+{
+  width: 306px;
+  height: 303px;
+  >.gridItem{
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+  }
+}
