@@ -64,11 +64,9 @@ var GridBox = React.createClass({
         return (
             <div className='gridbox'>
                 {
-                    this.state.grids.map(function (item, idx) {
-                        return (
+                    this.state.grids.map(((item, idx) => (
                             <GridItem idx={idx} drawGrid={this.drawGrid} mapPlayer={this.mapPlayer}>{item}</GridItem>
-                        );
-                    }.bind(this))
+                    )).bind(this))
                 }
                 <GridStatus nowPlayer={this.state.nowPlayer} winner={this.state.winner} mapPlayer={this.mapPlayer} reset={this.reset}/>
             </div>
