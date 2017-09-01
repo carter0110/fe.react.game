@@ -2,17 +2,13 @@ var GridItem = require('GridItem');
 var GridStatus = require('GridStatus');
 
 var GridBox = React.createClass({
-    getDefaultProps: function(){
-        return{
-            initialGrids: [0, 0, 0, 0, 0, 0, 0, 0, 0],
-        };
-    },
     getInitialState: function(){
-        return {
-            grids: this.props.initialGrids,
-            nowPlayer: 1,
-            winner: 0,
-        };
+        return this.defaultState();
+        // return {
+        //     grids: this.props.initialGrids,
+        //     nowPlayer: 1,
+        //     winner: 0,
+        // };
     },
     defaultState: function(){
         return {
